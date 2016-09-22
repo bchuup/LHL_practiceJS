@@ -38,47 +38,7 @@ function multiply(number){
 }
 
 
-// STOCK
-//strategy- push to array of numbers
-//the array will contain differences
-// each "differences" will be the difference between (first, second, third) number and the largest number in rest of starting array
 
-
-//function to return array of profits
-function arrOfDifferences(array){
-  var diff = []
-  array.forEach(function(item){
-    var profit = item - array[0];
-    diff.push(profit)
-  })
-  return diff
-}
-// function to get highest profit of array outputted by arr of differences
-function max(arr) {
-  var max = arr[0];
-  for (var value of arr){
-    if (value >= max){
-      max = value;
-    } else {
-      max = max;
-    }
-  }
-  return max;
-}
-// max(arrOfDifferences([[45, 24, 35, 31, 40, 38, 11]]))
-
-function profits(array){
-  return max(arrOfDifferences(array))
-}
-
-function maxProfit(arr){
-  var pushProfits = [];
-  for (var i = 0; i < arr.length; i++){
-    var profits = profits(arr.slice(i);
-    profitArray = pushProfits.push(profits)
-  }
-  max(profitArray)
-}
 
 
 
