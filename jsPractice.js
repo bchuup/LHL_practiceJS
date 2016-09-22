@@ -15,3 +15,13 @@ const map = (array, cb) => {
 }
 
 map(['adfsdfs', 'dlafdsaf'], length)
+
+
+
+// ASYNC AND CLOSURES
+for (var i = 0; i < 3; i++) {
+  setConsole = function(item){
+    return setTimeout(function() { console.log(item); }, 1000 + i);
+  }
+  setConsole(i)
+}
