@@ -17,7 +17,6 @@ const map = (array, cb) => {
 map(['adfsdfs', 'dlafdsaf'], length)
 
 
-
 // ASYNC AND CLOSURES
 for (var i = 0; i < 3; i++) {
   setConsole = function(item){
@@ -37,10 +36,17 @@ function multiply(number){
   }
 }
 
+//stocks- see stocks.js
 
-
-
-
+// bizzare sort
+function bizarreSort(array){
+  for (var value of array) {
+    setConsole = function(value){
+      return setTimeout(function() { console.log(value); }, value);
+    }
+    setConsole(value)
+  }
+}
 
 
 
