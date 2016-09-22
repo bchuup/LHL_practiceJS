@@ -25,3 +25,23 @@ for (var i = 0; i < 3; i++) {
   }
   setConsole(i)
 }
+
+
+// Higher-order function II
+// multiply
+//(multiply(4))(6)    === 24
+
+function macro(number){
+  return function(secondNumber){
+    return number * secondNumber
+  }
+}
+
+function multiply(x){
+  return macro(x)
+}
+
+
+
+
+
